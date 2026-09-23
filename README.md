@@ -40,12 +40,17 @@ data-quality-test-framework/
 
 ## Setup
 
-```bash
-git clone <this-repo>
-cd data-quality-test-framework
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/pdxcrimson/data-quality-test-framework.git
+   cd data-quality-test-framework
+   ```
+
+2. **Initialize the environment**:
+   ```bash
+   uv sync
+   ```
+   This creates a `.venv`, installs Python 3.14, and syncs dependencies (pytest and pytest-html).
 
 ## Running the tests
 
