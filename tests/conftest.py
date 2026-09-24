@@ -7,6 +7,7 @@ dataset defined in db/seed_data.sql.
 """
 
 import pytest
+
 from db.init_db import build_database
 
 

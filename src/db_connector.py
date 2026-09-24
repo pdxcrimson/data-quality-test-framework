@@ -6,8 +6,8 @@ framework easy to read and to swap for Postgres later (see README).
 """
 
 import sqlite3
-from pathlib import Path
 from contextlib import contextmanager
+from pathlib import Path
 
 DEFAULT_DB_PATH = Path(__file__).parent.parent / "db" / "test_data.db"
 
