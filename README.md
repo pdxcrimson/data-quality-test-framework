@@ -1,5 +1,7 @@
 # Data Quality Test Automation Framework
 
+[![Data Quality Tests](https://github.com/pdxcrimson/data-quality-test-framework/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/pdxcrimson/data-quality-test-framework/actions/workflows/tests.yml)
+
 A pytest-based framework for validating data integrity in a SQL database —
 schema checks, referential integrity, business-rule enforcement, and
 duplicate detection. Built to demonstrate SDET-style test automation
