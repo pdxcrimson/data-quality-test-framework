@@ -1,10 +1,8 @@
-# Python-generated files
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+*.pyc
+.pytest_cache/
+db/test_data.db
+reports/*.html
+.venv/
+venv/
 
-# Virtual environments
-.venv
