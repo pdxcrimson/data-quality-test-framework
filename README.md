@@ -58,10 +58,18 @@ data-quality-test-framework/
 
 ```bash
 # Builds a fresh SQLite DB automatically via the conftest fixture
-pytest tests/
+
+# Run all tests
+uv run pytest
+
+# Run specific test file
+uv run pytest tests/test_business_rules.py
+
+# Run all tests verbosely
+uv run pytest -v
 
 # With an HTML report
-pytest tests/ --html=reports/report.html --self-contained-html
+uv run pytest tests/ --html=reports/report.html --self-contained-html
 ```
 
 ## What the tests actually check
