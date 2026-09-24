@@ -13,10 +13,14 @@ from src.validators import referential_integrity
 def test_orphaned_orders_are_detected():
     orphans = referential_integrity.find_orphaned_orders()
     orphan_ids = {row["order_id"] for row in orphans}
-    assert orphan_ids == {105}, f"Expected only order 105 to be orphaned, got: {orphan_ids}"
+    assert orphan_ids == {
+        105
+    }, f"Expected only order 105 to be orphaned, got: {orphan_ids}"
 
 
 def test_orphaned_rebates_are_detected():
     orphans = referential_integrity.find_orphaned_rebates()
     orphan_ids = {row["rebate_id"] for row in orphans}
-    assert orphan_ids == {205}, f"Expected only rebate 205 to be orphaned, got: {orphan_ids}"
+    assert orphan_ids == {
+        205
+    }, f"Expected only rebate 205 to be orphaned, got: {orphan_ids}"
