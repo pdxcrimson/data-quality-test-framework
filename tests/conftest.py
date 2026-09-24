@@ -6,13 +6,6 @@ before the suite runs, so every test works against the same known
 dataset defined in db/seed_data.sql.
 """
 
-import sys
-from pathlib import Path
-
-# Make the repo root importable (so `from src...` works when running
-# pytest from anywhere).
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
 import pytest
 from db.init_db import build_database
 
